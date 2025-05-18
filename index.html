@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #111;
+            overflow: hidden;
+        }
+        .trail {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #000000;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: fade 0.8s forwards;
+            z-index: 0;
+        }
+        @keyframes fade {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+    </style>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>unothious</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+	<style type="text/css">
+		@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #000000;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content h2 {
+  color: #000000;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 4px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+.link {
+	position: absolute;
+	text-align: center;
+	top: 60%;
+	left: 47%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+
+}
+.linky {
+	position: absolute;
+	text-align: center;
+	top: 60%;
+	left: 53%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+
+    );
+  }
+}
+	</style>
+
+	<section>
+  <div class="content">
+    <h2>UNOTHIOUS</h2>
+    <h2>UNOTHIOUS</h2>
+  </div>
+</section>
+
+  <div class="video-container">
+    <iframe width="1515" height="852" src="https://www.youtube.com/embed/hBGbt2CRDpA"allowfullscreen></iframe>
+  </div>
+
+  <script>
+    document.addEventListener('mousemove', (e) => {
+        const trail = document.createElement('div');
+        trail.classList.add('trail');
+        document.body.appendChild(trail);
+        trail.style.left = e.pageX + 'px';
+        trail.style.top = e.pageY + 'px';
+
+
+        setTimeout(() => {
+            trail.remove();
+        }, 500);
+    });
+</script>
+<p><a href="https://github.com/unothious" class="link"><img src="https://www.pngall.com/wp-content/uploads/13/Github-Logo.png" style="width:55px;height: 55px;"></a></p>
+<p><a href="https://discord.gg/RPc25JGX
+" class="linky"><img src="https://freelogopng.com/images/all_img/1691730767discord-logo-transparent.png" style="width:60px;height: 50px;"></a></p>
+
+
+
+
+</body>
+</html>
