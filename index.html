@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="mouse.css">
 	<style>
         body {
             margin: 0;
@@ -10,9 +11,9 @@
         }
         .trail {
             position: absolute;
-            width: 100px;
-            height: 100px;
-            background-color: #000000;
+            width: 24px;
+            height: 24px;
+            background-color: #FFFFFF;
             border-radius: 50%;
             pointer-events: none;
             animation: fade 0.8s forwards;
@@ -98,7 +99,7 @@ body {
 
 .content h2:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 4px #03a9f4;
+  -webkit-text-stroke: 8px #000000;
 }
 
 .content h2:nth-child(2) {
@@ -109,7 +110,7 @@ body {
 	position: absolute;
 	text-align: center;
 	top: 60%;
-	left: 47%;
+	left: 48%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
 
@@ -118,7 +119,7 @@ body {
 	position: absolute;
 	text-align: center;
 	top: 60%;
-	left: 53%;
+	left: 52%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
 }
@@ -163,7 +164,9 @@ body {
 </section>
 
   <div class="video-container">
-    <iframe width="1515" height="852" src="https://www.youtube.com/embed/hBGbt2CRDpA"allowfullscreen></iframe>
+    <video controls loop>
+      <source src="vid.mp4" type="video/mp4">
+    </video>
   </div>
 
   <script>
@@ -180,9 +183,11 @@ body {
         }, 500);
     });
 </script>
-<p><a href="https://github.com/unothious" class="link"><img src="https://www.pngall.com/wp-content/uploads/13/Github-Logo.png" style="width:55px;height: 55px;"></a></p>
+<p><a href="https://github.com/unothious" class="link"><img src="https://www.pngall.com/wp-content/uploads/13/Github-Logo.png" style="width:63px;height: 63px;"></a></p>
 <p><a href="https://discord.gg/RPc25JGX
 " class="linky"><img src="https://freelogopng.com/images/all_img/1691730767discord-logo-transparent.png" style="width:60px;height: 50px;"></a></p>
+
+
 
 
 
