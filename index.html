@@ -16,10 +16,10 @@
             background-color: #FFFFFF;
             border-radius: 50%;
             pointer-events: none;
-            animation: fade 0.8s forwards;
+            animation: fade 1s forwards;
             z-index: 0;
         }
-        @keyframes fade {
+        @keyframes fade { 
             0% {
                 opacity: 1;
                 transform: scale(1);
@@ -110,7 +110,7 @@ body {
 	position: absolute;
 	text-align: center;
 	top: 60%;
-	left: 48%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
 
@@ -119,9 +119,17 @@ body {
 	position: absolute;
 	text-align: center;
 	top: 60%;
-	left: 52%;
+	left: 54%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
+}
+.linkyy {
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 @keyframes animate {
   0%,
@@ -164,8 +172,8 @@ body {
 </section>
 
   <div class="video-container">
-    <video controls loop>
-      <source src="vid.mp4" type="video/mp4">
+    <video autoplay muted loop>
+      <source src="vid.mp4" type= "video/mp4">
     </video>
   </div>
 
@@ -185,8 +193,95 @@ body {
 </script>
 <p><a href="https://github.com/unothious" class="link"><img src="https://www.pngall.com/wp-content/uploads/13/Github-Logo.png" style="width:63px;height: 63px;"></a></p>
 <p><a href="https://discord.gg/RPc25JGX
-" class="linky"><img src="https://freelogopng.com/images/all_img/1691730767discord-logo-transparent.png" style="width:60px;height: 50px;"></a></p>
+" class="linky"><img src="https://www.pngall.com/wp-content/uploads/13/Discord-Logo-PNG-Photo.png" style="width:85px;height: 50px;"></a></p>
+<p><a href="https://www.roblox.com/users/2710197355/profile?friendshipSourceType=PlayerSearch
+" class="linkyy"><img src="https://static.vecteezy.com/system/resources/previews/027/127/530/original/roblox-logo-roblox-icon-transparent-free-png.png" style="width:85px;height: 85px;"></a></p>
 
+<style type="text/css">
+  
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Video container */
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Dropdown menu container */
+    .menu {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+    }
+
+    .menu > button {
+      background-color: transparent;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border: 5px;
+      outline: 3px;
+      outline-style: solid;
+    }
+
+    .menu > button:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: transparent;
+      color: white;
+      min-width: 150px;
+      border: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      outline: 3px;
+      outline-style: solid;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .dropdown a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .menu:hover .dropdown {
+      display: block;
+    }
+  
+</style>
+
+<div class="menu">
+      <button>Menu</button>
+      <div class="dropdown">
+        <a href="#option1">Option 1</a>
+        <a href="#option2">Option 2</a>
+        <a href="#option3">Option 3</a>
+      </div>
+</div>
 
 
 
