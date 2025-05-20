@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2</title>
+
+	<style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0.2;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="video-container">
+    <video autoplay muted loop>
+      <source src="vid.mp4" type= "video/mp4">
+    </video>
+</div>
+
+<style type="text/css">
+  
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Video container */
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Dropdown menu container */
+    .menu {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+    }
+
+    .menu > button {
+      background-color: transparent;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border: 5px;
+      outline: 3px;
+      outline-style: solid;
+    }
+
+    .menu > button:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: transparent;
+      color: white;
+      min-width: 150px;
+      border: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      outline: 3px;
+      outline-style: solid;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .dropdown a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .menu:hover .dropdown {
+      display: block;
+    }
+  
+</style>
+
+<div class="menu">
+      <button>Menu</button>
+      <div class="dropdown">
+        <a href="index.html">return</a>
+        <a href="#option2">Option 2</a>
+        <a href="#option3">Option 3</a>
+      </div>
+</div>
+<iframe src="note.pdf" style="position: absolute; top: 10%; left: 27%; z-index: 2; height: 80vh; width: 50vw;"></iframe>
+
+</body>
+</html>
